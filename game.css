@@ -1,0 +1,63 @@
+html {
+  overflow: hidden;
+}
+
+.Opponent .Boss{
+	animation: rotation 3s infinite linear;
+	-webkit-animation: rotation 3s infinite linear;
+}
+
+.paused .Opponent .Boss {
+	animation: none;
+	-webkit-animation: none;
+}
+
+ .Boss {
+	width: 500px;
+	height: 5000px;
+} 
+
+@-webkit-keyframes rotation {
+	from {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+		-webkit-transform: rotate(359deg);
+	}
+}
+body{
+	background-image: url(https://i.pinimg.com/originals/31/0d/4a/310d4a2f36b4fe4a07a31f5f7759a4d3.jpg);
+}
+
+p{
+	display: flex;
+	justify-content: center;
+}
+#pause {
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	border: none;
+	background: #ddd;
+	color: #333;
+	padding: 5px;
+	border: 3px solid rgb(87, 6, 6);
+	font-size: 300%;
+	font-family: monospace;
+	background-color: rgb(231, 208, 130);
+	cursor: pointer;
+}	
+
+#board {
+	position: fixed;
+	top: 5px;
+	font-family: monospace;
+	font-size: 300%;
+	right: 30px;
+	padding: 5px;
+	border: 3px solid #09153d;
+	background-color: rgb(177, 191, 235);
+	list-style-type: none;
+}
